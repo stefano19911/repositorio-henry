@@ -13,22 +13,22 @@ return acc;
 
 }
 
-function DecimalABinario(num) {
+ function DecimalABinario(num) {
    var binario=[];
-   do{
-      if(num % 2 === 1){
-         binario.push(1);
-      }else{
-         binario.push(0);
-      } 
-      num = Math.floor(num / 2);
+      do{
+       if(num % 2 === 1){
+          binario.push(1);
+       }else{
+          binario.push(0);
+       } 
+       num = Math.floor(num / 2);
 
-   }while (num >= 1)
-      return binario.reverse().join("");
+    }while (num >= 1)
+       return binario.reverse().join("");
+
+  }
 
  
-
-}
 
 module.exports = {
    BinarioADecimal,
